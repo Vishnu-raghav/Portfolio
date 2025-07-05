@@ -5,6 +5,7 @@ import SectionWrapper from './components/SectionWrapper'
 import About from './Sections/About'
 import HeroSection from './components/Hero.jsx'
 import SkillsSection from './Sections/Skills.jsx'
+import ProjectsSection from './Sections/Projects.jsx'
 // import './App.css'
 
 
@@ -21,6 +22,9 @@ function App() {
       </SectionWrapper>
       <SectionWrapper id="about">
          <SkillsSection/>
+      </SectionWrapper>
+      <SectionWrapper id="about">
+         <ProjectsSection/>
       </SectionWrapper>
      </MainLayout>
   )
