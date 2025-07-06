@@ -7,6 +7,7 @@ import HeroSection from './components/Hero.jsx'
 import SkillsSection from './Sections/Skills.jsx'
 import ProjectsSection from './Sections/Projects.jsx'
 // import './App.css'
+import Home from "./Sections/Home.jsx"
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
      <MainLayout>
       <Header/>
       <SectionWrapper id="about">
-        <HeroSection/>
+       <Home/>
       </SectionWrapper>
       <SectionWrapper id="about">
          <About />
