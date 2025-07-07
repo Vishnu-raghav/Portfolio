@@ -24,7 +24,7 @@ export default function ShootingStars() {
       }, 2000);
     };
 
-    const interval = setInterval(createStar, 3000); // every 3 sec
+    const interval = setInterval(createStar, 3000); 
     return () => clearInterval(interval);
   }, []);
 

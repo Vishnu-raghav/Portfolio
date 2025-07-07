@@ -1,67 +1,10 @@
-// import { motion } from "framer-motion";
-// import img from "../assets/me.jpg";
-
-// export default function HeroSection() {
-//   return (
-//     <section className="relative   text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 pt-16 md:gap-6 gap-2">
-//       {/* Left Content */}
-//       <div className="z-10 md:w-1/2 space-y-4 text-center md:text-left">
-//         <motion.h1
-//           initial={{ opacity: 0, x: -50 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           transition={{ duration: 1 }}
-//           className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-400 to-indigo-400"
-//         >
-//           Vishnu Raghav
-//         </motion.h1>
-
-//         <motion.p
-//           initial={{ opacity: 0, x: -30 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           transition={{ delay: 0.4, duration: 1 }}
-//           className="text-lg md:text-xl text-gray-300"
-//         >
-//           Turning ideas into visually stunning and performant websites.
-//         </motion.p>
-
-//         <motion.div
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//           transition={{ delay: 0.8, duration: 1 }}
-//           className="flex gap-3 justify-center md:justify-start flex-wrap"
-//         >
-//           <button className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300">
-//             View Projects
-//           </button>
-//           <button className="bg-white text-black hover:bg-gray-100 px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300">
-//             Hire Me
-//           </button>
-//         </motion.div>
-//       </div>
-
-//       {/* Right Illustration */}
-//       <motion.div
-//         className="md:w-1/2 flex justify-center mt-10 md:mt-0"
-//         initial={{ opacity: 0, y: 30 }}
-//         animate={{ opacity: 1, y: 0 }}
-//         transition={{ delay: 1, duration: 1 }}
-//       >
-//         <img
-//           src={img}
-//           alt="developer"
-//           className="w-36 sm:w-44 rounded-2xl md:w-64 drop-shadow-xl"
-//         />
-//       </motion.div>
-//     </section>
-//   );
-// }import { motion } from "framer-motion";
-import me from "../assets/me.jpg"; // 🖼️ Replace this with your actual image
+import me from "../assets/me.jpg"; 
 import { motion } from "framer-motion";
 export default function HomeSection() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-[#0e0e1a] to-black text-white px-6 sm:px-10 md:px-16 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <section className="relative min-h-screen  text-white px-6 sm:px-10 md:px-16 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
       
-      {/* 🔥 Left Content */}
+      {/* Left Content */}
       <div className="w-full md:w-1/2 text-center md:text-left z-10">
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
@@ -95,7 +38,7 @@ export default function HomeSection() {
             View Projects
           </a>
           <a
-            href="/resume.pdf" // 📄 Put your resume in public folder
+            href="/resume.pdf" 
             className="border border-gray-600 text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300 text-center"
             download
           >
@@ -104,7 +47,7 @@ export default function HomeSection() {
         </motion.div>
       </div>
 
-      {/* 👤 Right Image */}
+      {/* Right Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -120,11 +63,11 @@ export default function HomeSection() {
         </div>
       </motion.div>
 
-      {/* 🌈 Glows */}
+      {/* Glows */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-purple-500 rounded-full blur-[100px] opacity-20 -z-10" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-500 rounded-full blur-[100px] opacity-20 -z-10" />
 
-      {/* 🌟 Star Twinkle Effect */}
+      {/* Star Twinkle Effect */}
       <div className="absolute inset-0 -z-20 pointer-events-none">
         {[...Array(40)].map((_, i) => (
           <div

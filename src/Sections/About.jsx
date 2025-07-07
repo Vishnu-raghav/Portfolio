@@ -2,9 +2,8 @@ import { motion } from "framer-motion";
 import CTAButton from "../components/CtaBtn.jsx";
 
 export default function About() {
-
   return (
-    <div className="text-white space-y-14 py-16 px-6 bg-gradient-to-b from-black to-gray-900">
+    <div className="text-white space-y-14 py-16 px-6 ">
       {/* Section Title */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

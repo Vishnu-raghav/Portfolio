@@ -8,7 +8,7 @@ import {
   Mail,
   FileText,
 } from "lucide-react";
-import ThemeToggle from "./ThemeToggle"; // 👈 import added
+
 
 const navLinks = [
   { id: "home", icon: <Home size={20} />, label: "Home" },
