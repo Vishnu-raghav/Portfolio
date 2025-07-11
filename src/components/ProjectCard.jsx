@@ -12,12 +12,12 @@ export default function ProjectCard({
 }) {
   return (
     <motion.div
-      whileHover={{ scale: 1.03 }}
+      whileHover={{ scale: 1.015 }}
       transition={{ duration: 0.3 }}
-      className="relative bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl shadow-lg group flex flex-col h-full"
+      className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-xl shadow-xl group flex flex-col overflow-hidden"
     >
-      {/* Project Image */}
-      <div className="h-48 w-full overflow-hidden">
+      {/* Image */}
+      <div className="h-32 xs:h-36 sm:h-40 md:h-48 w-full overflow-hidden">
         <img
           src={imgUrl}
           alt={title}
@@ -26,46 +26,49 @@ export default function ProjectCard({
       </div>
 
       {/* Content */}
-      <div className="p-5 flex flex-col justify-between flex-grow">
-        <div>
-          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+      <div className="flex flex-col justify-between p-4 sm:p-5 gap-3 text-white">
+        {/* Title */}
+        <h3 className="text-base sm:text-lg font-semibold">{title}</h3>
 
-          {/* Truncated Description */}
-          <p className="text-sm text-gray-400 leading-relaxed mb-4 line-clamp-4">
-            {description}
-          </p>
+        {/* Description */}
+        <p className="text-sm text-gray-300 leading-snug line-clamp-2 sm:line-clamp-3">
+          {description}
+        </p>
 
-          {/* Tech Stack */}
-          <div className="flex flex-wrap gap-2 mt-3">
-            {tech.map((item, i) => (
-              <span
-                key={i}
-                className="text-xs px-2 py-1 rounded-full bg-white/10 text-gray-300 border border-white/10"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
+        {/* Tech Stack */}
+        <div className="flex flex-wrap gap-2">
+          {tech.map((item, i) => (
+            <span
+              key={i}
+              className="text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-white/10 text-gray-300 border border-white/10"
+            >
+              {item}
+            </span>
+          ))}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex items-center gap-4 mt-6">
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-pink-400 transition text-xl"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-green-400 transition text-xl"
-          >
-            <FiExternalLink />
-          </a>
+        {/* Buttons */}
+        <div className="flex items-center gap-4 mt-1">
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-400 transition text-base sm:text-lg"
+            >
+              <FaGithub />
+            </a>
+          )}
+          {liveUrl && (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-green-400 transition text-base sm:text-lg"
+            >
+              <FiExternalLink />
+            </a>
+          )}
         </div>
       </div>
     </motion.div>

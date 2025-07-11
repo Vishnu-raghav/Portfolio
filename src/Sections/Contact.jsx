@@ -41,7 +41,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="min-h-screen py-24 px-6 md:px-20 text-white relative overflow-hidden"
+      className="min-h-screen py-24 px-6  md:px-20 text-white relative overflow-hidden"
     >
       <motion.h2
         initial={{ opacity: 0, scale: 0.95 }}

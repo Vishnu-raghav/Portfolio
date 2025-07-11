@@ -25,37 +25,34 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="py-24 px-6 md:px-20 text-white relative"
+      className="py-20 px-4 sm:px-8 md:px-16 lg:px-32 text-white relative"
     >
       {/* Heading */}
       <motion.h2
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-center text-4xl md:text-5xl font-bold mb-20 bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-violet-400"
+        className="text-center text-3xl sm:text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-cyan-400 mb-12"
       >
-        My Tech Arsenal 🔧
+        My Tech Stack 💻
       </motion.h2>
 
-      {/* Advanced Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 max-w-6xl mx-auto">
+      {/* Skills Grid */}
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-5 sm:gap-8 place-items-center max-w-6xl mx-auto">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            whileHover={{
-              scale: 1.08,
-              rotate: 1,
-              transition: { type: "spring", stiffness: 300 },
-            }}
-            className="relative group p-[1px] rounded-xl bg-gradient-to-tr from-white/10 via-white/5 to-transparent shadow-lg hover:shadow-pink-400/30"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, delay: index * 0.05 }}
+            viewport={{ once: true }}
+            className="group w-full sm:w-[90px] md:w-[100px] aspect-square flex flex-col items-center justify-center p-3 rounded-xl border border-white/10 bg-white/5 hover:bg-pink-500/10 hover:border-pink-400 shadow-md transition"
           >
-            <div className="flex flex-col items-center justify-center rounded-xl p-5 sm:p-6 backdrop-blur-md bg-black/30 w-full h-full transition-all duration-300 hover:bg-black/20">
-              <div className="text-3xl sm:text-4xl mb-3">{skill.icon}</div>
-              <p className="text-sm text-center text-gray-300 tracking-wider font-medium uppercase group-hover:text-pink-400 transition">
-                {skill.name}
-              </p>
-            </div>
+            <div className="text-2xl sm:text-3xl mb-2">{skill.icon}</div>
+            <p className="text-[10px] sm:text-xs text-center text-gray-300 uppercase tracking-wide group-hover:text-pink-400">
+              {skill.name}
+            </p>
           </motion.div>
         ))}
       </div>

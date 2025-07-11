@@ -16,15 +16,6 @@ export default function HomeSection() {
           <span className="text-white">Turning Ideas into Interactive Realities</span>
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-gray-400 mt-6 max-w-xl text-base sm:text-lg md:text-xl mx-auto md:mx-0"
-        >
-          I specialize in building dynamic, responsive, and high-performance websites using modern technologies like React, Node.js, and Tailwind CSS. From stunning frontend interfaces to robust backend APIs — I deliver end-to-end web solutions.
-        </motion.p>
-
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
