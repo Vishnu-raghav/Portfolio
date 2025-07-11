@@ -8,9 +8,6 @@ import ProjectsSection from './Sections/Projects.jsx';
 import Home from "./Sections/Home.jsx";
 import ContactSection from './Sections/Contact.jsx';
 import Footer from './components/Footer.jsx';
-import BlogSection from './Sections/Blogs.jsx';
-import BlogDetail from './pages/BlogDetail.jsx';
-
 export default function App() {
   return (
     <>
@@ -25,12 +22,10 @@ export default function App() {
               <SectionWrapper id="skills"><SkillsSection /></SectionWrapper>
               <SectionWrapper id="project"><ProjectsSection /></SectionWrapper>
               <SectionWrapper id="contact"><ContactSection /></SectionWrapper>
-              <SectionWrapper id="blog"><BlogSection /></SectionWrapper>
               <Footer />
             </MainLayout>
           }
         />
-        <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     </>
   );

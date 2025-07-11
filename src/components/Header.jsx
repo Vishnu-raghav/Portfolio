@@ -2,11 +2,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import {
   Home,
-  User,
   Code2,
   LayoutDashboard,
   Mail,
-  FileText,
 } from "lucide-react";
 
 
@@ -15,7 +13,6 @@ const navLinks = [
   { id: "skills", icon: <Code2 size={20} />, label: "Skills" },
   { id: "projects", icon: <LayoutDashboard size={20} />, label: "Projects" },
   { id: "contact", icon: <Mail size={20} />, label: "Contact" },
-  { id: "blog", icon: <FileText size={20} />, label: "Blog" },
 ];
 
 export default function Header() {

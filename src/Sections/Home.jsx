@@ -1,8 +1,10 @@
-import me from "../assets/me.jpg"; 
+import '../App.css';
+import me from "../assets/me.jpg";
 import { motion } from "framer-motion";
+
 export default function HomeSection() {
   return (
-    <section className="relative min-h-screen  text-white px-6 sm:px-10 md:px-16 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <section className="relative min-h-screen text-white px-6 sm:px-10 md:px-16 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
       
       {/* Left Content */}
       <div className="w-full md:w-1/2 text-center md:text-left z-10">
@@ -29,7 +31,7 @@ export default function HomeSection() {
             View Projects
           </a>
           <a
-            href="/resume.pdf" 
+            href="/resume.pdf"
             className="border border-gray-600 text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300 text-center"
             download
           >
