@@ -19,8 +19,8 @@ export default function App() {
             <MainLayout>
               <Header />
               <SectionWrapper id="home"><Home /></SectionWrapper>
-              <SectionWrapper id="skills"><SkillsSection /></SectionWrapper>
               <SectionWrapper id="project"><ProjectsSection /></SectionWrapper>
+              <SectionWrapper id="skills"><SkillsSection /></SectionWrapper>
               <SectionWrapper id="contact"><ContactSection /></SectionWrapper>
               <Footer />
             </MainLayout>

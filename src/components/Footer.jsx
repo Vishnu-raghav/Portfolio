@@ -16,7 +16,7 @@ export default function Footer() {
             Vishnu Raghav
           </h2>
           <p className="text-sm text-gray-300 mt-1 max-w-xs mx-auto sm:mx-0">
-            Building Web Experiences | Frontend Dev | Dreamer 💻🚀
+            Building Web Experiences | Full Stack Dev
           </p>
         </div>
 

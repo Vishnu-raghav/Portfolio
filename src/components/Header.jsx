@@ -10,8 +10,8 @@ import {
 
 const navLinks = [
   { id: "home", icon: <Home size={20} />, label: "Home" },
-  { id: "skills", icon: <Code2 size={20} />, label: "Skills" },
   { id: "projects", icon: <LayoutDashboard size={20} />, label: "Projects" },
+  { id: "skills", icon: <Code2 size={20} />, label: "Skills" },
   { id: "contact", icon: <Mail size={20} />, label: "Contact" },
 ];
 
